@@ -1,0 +1,501 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+<style>
+     
+    *,
+    *::after,
+    *::before {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+    
+    .html {
+      font-size: 62.5%;
+    }
+    
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: bisque;
+    }
+    
+    @media screen and (max-width: 720px) {
+  /*CSS codes go here*/
+}
+    .nav {
+      height: 110px;
+      width: 100%;
+      background-color:aliceblue;
+       }
+    
+    .nav > .nav-header {
+      display: inline;
+    }
+    
+    .nav > .nav-header > .nav-title {
+        margin-top: 5px;
+        margin-left: 15px;
+        margin-bottom: 5px;
+      display: inline-block;
+      font-size: 50px;
+      color:orange;
+      margin-bottom: 5px;
+      
+    }
+    
+    .nav > .nav-btn {
+      display: none;
+    }
+    
+    .nav > .nav-links {
+      display: inline;
+      float: right;
+      font-size: 18px;
+    }
+    
+    .nav > .nav-links > a {
+        margin-top: 5px;
+        margin-bottom: 5px;
+      display: inline-block;
+      padding: 13px 10px 13px 10px;
+      margin-right: 10px;
+      text-decoration: none;
+      color:black;
+      font-size:35px;
+    }
+    .nav > .nav-links > a>button{
+        size: 110px;
+        
+    }
+    
+    .nav > .nav-links > a:hover {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    
+   
+    
+    .header{
+        margin-top: 30px;
+        margin-left:70px;
+        
+        font-size: 35px;
+        
+    }
+    .header img{
+        float: right;
+
+    }
+    .maindiv{
+      margin-left: 10px;
+    }
+    .card{
+        box-shadow:  4px 8px  rgba(0,0,0,0.2);
+  
+  width: 30%;
+  height: 75%;
+  display: inline-block;
+  
+  margin-left: 25px;
+  margin-right: 25px;
+  background-color: white;
+
+}
+.p{
+
+  font-size: 30px;
+}
+.card img{
+    width: 150px;
+    height: 70px;
+    position: center;
+}
+.contactform{
+  width: 100%;
+  height: 100%;
+}
+.contactform img{
+  margin-top: 270px;
+  margin-left: 160px;
+}
+.contactform form{
+  margin-left: 50%;
+  margin-top: -340px;
+
+}
+.contactform form input{
+  padding-block-start: 20px;
+  padding-block: 20px;
+}
+.findus{
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 90%;
+
+  display: inline-block;
+  padding-inline-start: 25px;
+  margin-left: 30px;
+  
+    }
+    .prk{
+      height: 40%;
+      width: 100%;
+    }
+    .prk img{
+      display: inline;
+      margin-top:20%;
+      padding-inline: 8%;
+    
+    }
+   #contact {
+    padding: 5rem 0;
+    background: rgb(226, 226, 226);
+  }
+  
+  .contact-container {
+    display: flex;
+    background: #fff;
+  }
+  
+  .contact-img {
+    width: 50%;
+  }
+  
+  .contact-img img {
+    display: block;
+    height: 400px;
+    width: 100%;
+    object-position: center;
+    object-fit: cover;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+  }
+  .form-container textarea {
+    display:inline;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #ddd;
+
+    outline: none;
+    padding: 1rem 0;
+    resize: none;
+  }
+  .container2{
+    background-color: rgb(22, 22, 43);
+    height: 100%;
+    width: 100%;
+    font-size: 30px;
+    color: white;
+    
+  }
+  .container2 p{
+    font-size: 30px;
+    text-align: left;
+  }
+  .formcontainer2{
+    float: right;
+    margin-right: 10%;
+    margin-bottom: -10%;
+    margin-top: -120px;
+  }
+  
+  .footer {
+  width: 100%;
+  position: relative;
+  height: 40%;
+  background-color: #070617;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+    
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 30px;
+  line-height: 35px;
+  padding: 20px 0px 5px 0px;
+  color:white;
+  font-weight: normal;
+
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 10px  10px;
+  
+
+}
+
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+
+}
+.clearfix {
+  clear: both;
+}
+  
+    </style>
+<body>
+   
+  
+  
+  
+  <div class="nav">
+      
+      <div class="nav-header">
+        <div class="nav-title">
+         <h4 ><img src="https://media.istockphoto.com/id/1138748281/vector/courier-icon-design-template-shipment-icon-vector-design-car-icon-symbol.jpg?s=612x612&w=0&k=20&c=ad_Y5VNEn_bgFGAkWgNRBoIAd4Vr2txjbBxgJsHD2B4=" height="70px" width="90px">Goyalbox</h4>
+        </div>
+      </div>
+      
+      
+      <div class="nav-links">
+        <a href="">Home</a>
+       
+        <a href="">Our services</a>
+        <a href="#contact">Find us</a>
+        <button style="font-size:24px;  background-color: orange; border: none; color: white; padding: 7px 7px;"><i class="fa fa-search"></i></button>
+        <a href=""></a>
+        <button style=" 
+        background-color: orange; border: none; color: white;  padding: 15px 32px; text-align: center; display: inline-block;
+  font-size: 16px; margin-right: 10px;margin-top: 5px;">Contact Us</button>
+        
+      </div>
+    </div>
+
+
+
+
+
+    <section>
+    <div class="main">
+    <div class="header" >
+        
+                   <br>  <br> <h1>A trusted provider of</h1><br>
+                     <h2><b>courier services</b></h2><br>
+                     <p>We deliver your products safely to <br>
+                        your home in a reasonable time.</p>
+                        <button style=" 
+                        background-color:red; border: none; color: white;  padding: 15px 32px; text-align: center;text-decoration: none; display: inline-block;
+                  font-size: 16px; margin-right: 10px;margin-top: 5px;"><b>Get Started-></b></button> <img style="float: right; margin-right: 230px;margin-bottom: 100px;margin-left: 50%;margin-top: -220px;" src="https://themewagon.github.io/courier/v1.0.0/assets/img/illustrations/hero.png" height="350px" width="850px" >
+     </div>
+</div>
+    </div>
+    </section>
+
+
+
+
+    <center><h5 style="color: orange;font-size: 30px;">SERVICE</h5>
+      <h4 style="font-size: 60px;">our services for you</h4></center><br><br>
+   <div class="card">
+              <br><center><img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/services-1.svg"></center><br>
+          <div class="p">
+                      <center><h5><b>Business Services</b></h5><br>
+                      Offering home delivery <br>
+                      around the city,where your <br>
+                       products will be <br>
+                       at your doorstep within 48-72 hours. <br><br>
+                   
+                    <li>Corporate goods</li>
+                    <li>Shipment</li>
+                    <li>Accesories</li>
+                   <br>
+                      <button style=" 
+          background-color: orange; border: none; color: white;  padding: 15px 32px; text-align: center;display: inline-block;
+   font-size: 16px; margin-right: 10px;margin-top: 5px;">Learn More</button>
+                      </center>
+                  </div>
+               </div>
+                   <div class="card">
+              <br><center><img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/services-2.svg"></center><br>
+              <div class="p">
+                      <center><h5><b>Statewide Services</b></h5><br>
+                          Offering home delivery <br>
+                          around the city, where your <br>
+                       products will be <br>
+                       at your doorstep within 48-72 hours. <br><br>
+                   
+                    <li>Unlimited Bandwidth</li>
+                    <li>  Encrypted Connection </li>
+                      <li>Yes Traffic Logs</li><br>
+                      <button style=" 
+          background-color: orange; border: none; color: white;  padding: 15px 32px; text-align: center;text-decoration: none; display: inline-block;
+    font-size: 16px; margin-right: 10px;margin-top: 5px;">Learn More</button>
+                      </center>
+                  </div>
+          </div>
+                  <div class="card">
+             <br> <center><img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/services-3.svg"></center><br>
+              <div class="p">
+                      <center><h5><b>Personal Services</b></h5><br>
+                          You can trust us to safely <br>
+                           deliver your most sensitive <br>
+                           documents to the specific <br>
+                           area in a short time. <br><br>
+                   
+                    <li>Unlimited Bandwidth</li>
+                    <li>  Encrypted Connection </li>
+                      <li>Yes Traffic Logs</li><br>
+                      <button style=" 
+          background-color: orange; border: none; color: white;  padding: 15px 32px; text-align: center;text-decoration: none; display: inline-block;
+    font-size: 16px; margin-right: 10px;margin-top: 5px;">Learn More</button>
+                      </center>
+                  </div>
+          </div>
+
+
+          <div class="prk">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/awards.png">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/states.png">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/clients.png">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/goods.png">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/icons/business.png">
+          </div>
+         
+         
+         
+         
+         
+          <div class="contactform">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/illustrations/callback.png"><br>
+            <h3 style="color: orange;font-size: 30px;margin-left: 140px;">REQUEST A CALLBACK</h3>
+            <p style="color: #070617;font-size: 50px;margin-left: 140px;"><b>We will contact <br> 
+              in the shortest time.</b></p>
+            
+                <form style="background-color: bisque;">
+                <input type="text" placeholder="Name"  style="padding: 20px 200px;background-color: bisque;"><br><br>
+                <input type="text" placeholder="Email" style="padding: 20px 200px;background-color: bisque;" ><br><br>
+                <textarea placeholder="Message" style="padding: 20px 200px;background-color: bisque;"></textarea><br><br>
+                <button >Send Message ✅</button>
+                </form>
+           </div>
+            
+          
+    
+   
+   
+   
+           <br><br><br>
+   <center> <h3 style="color: orange;font-size: 30px;">FIND US</h3><br>
+    <h2 style="font-size: 60px;">Access us easily</h2><br><br>
+    <div class="findus">
+    <section id="contact">
+        <div class="contact-container container">
+          <div class="contact-img">
+            <img src="https://themewagon.github.io/courier/v1.0.0/assets/img/gallery/map.svg" alt="" />
+          
+        </div>
+        <div class="container">
+        <br><br>     <pre style="font-size: 20px;">           <h2>Contact With Us</h2>
+    2277 Lorem Ave, San Diego, CA 22553 <br><br>
+      Monday - Friday: 10 am - 10pm <br><br>
+      Sunday: 11 am - 9pm <br><br>
+      info@quriarbox.com<br><br><br>
+   </div>
+        </div>
+      </section><br><br>
+    </div>
+   <br><br><center> <button style=" 
+    background-color: orangered; border: none; color: white;  padding: 25px 150px; text-align: center;text-decoration: none; display: inline-block;
+   font-size: 16px; margin-right: 10px;margin-top: 5px;">Contact Us--762022--</button></center>
+   
+   
+   
+   
+   
+   <br><br><div class="container2">
+  <br>  <br> <h1 style="text-align: left;margin-left: 15px;">Get an update every week</h1><br>
+ <p style="font-size: 20px;margin-left: 15px;">We ensure that your product is delivered in the safest possible <br>
+          manner, at the correct location, at the right time.</p>
+          <div class="formcontainer2">
+            <h4 style="color: orange;">SUBSCRIBE TO NEWSLETTER</h4><br>
+            <input type="text" placeholder="Enter Your Email" style="color: white;  padding: 15px 32px; text-align: center;text-decoration: none; display: inline-block;
+            font-size: 16px; margin-right: 10px;margin-top: 5px;">         <button style=" background-color: orange; color: white;  padding: 15px 32px; text-align: center;text-decoration: none; display: inline-block;
+            font-size: 16px; margin-right: 10px;margin-top: 5px;"">subcribe</button>
+          </div>
+    <br><br><br><br><br><div class="footer">
+      <div class="contain">
+      <div class="col">
+        <h1 style="color: orange;font-size: 40px;">Goyalbox</h1><br>
+        <ul>
+          <li>The most trusted Courier<br>
+              company in your area.</li>
+        </ul>
+      </div>
+      <div class="col">
+        <ul>
+          <li></li>
+        </ul>
+      </div>
+      <div class="col">
+         <li></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Other links</h1>
+        <ul>
+          <li>Blogs</li>
+          <li>Movers Website</li>
+          <li>Traffic update</li>
+        
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Services</h1>
+        <ul>
+          <li>Corprates Goods</li>
+          <li>Artsworks</li>
+          <li>Documents</li>
+        </ul>
+      </div>
+      <div class="col social">
+        <h1>Customer Care</h1>
+        <ul>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Get Update</li>
+        </ul>
+      </div>
+    <div class="clearfix"></div>
+    </div>
+    </div>
+    <p style="margin-top: 15px;margin-left: 20px;font-size: 20px;">All rights Reserved © Your Company, 2021</p>
+  
+    <p style="margin-top: 0px;margin-right: 20px;font-size: 20px;float: right;">Made with ❤️ by Priya Goyal</p>
+   </div>
+  
+    
+   
+        
+</body>
+</html>
